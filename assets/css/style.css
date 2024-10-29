@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+@font-face {
+  font-family: 'Basking';
+  src: url('./assets/fonts/Basking.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GREY';
+  src: url('./assets/fonts/GREY.ttf') format('truetype');
+}
+
+
+.con {
+  height: 14lvh;
+  top: 0px;
+  background-color: #ebeae8;
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+.row1 {
+  height: 5.2rem;
+}
+
+.row1 li {
+  list-style-type: none;
+  color: rgb(0 0 0 / 69%);
+  font-size: 18px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+li.active a{
+  color: #34b7a7;
+}
+
+.text-with-line {
+  position: relative;
+  transition: color 0.5s ease-in-out;
+  cursor: pointer;
+}
+.text-with-line a{
+  color: rgb(0 0 0 / 69%);
+  text-decoration: none;
+}
+
+.text-with-line:hover {
+  color: #34b7a7;
+}
+
+.text-with-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0.5rem;
+  width: 0;
+  height: 2px;
+  background-color: #34b7a7;
+  transition: width 0.5s ease-in-out;
+}
+
+.text-with-line:hover::after {
+  width: 30px;
+}
+
+@keyframes expand {
+  0% {
+    width: 0;
+    transform: translateY(-10px);
+
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.text-with-line::after {
+
+  animation: expand 0.5s ease-in-out;
+}
+
+.row1 div:first-of-type p {
+  padding: 10px;
+  font-size: 31px;
+  letter-spacing: 5px;
+  color: #000000;
+  position: relative;
+  top: 7px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.row1 div:first-of-type button{
+  display: none;
+}
+
+
+
+.row1 div:last-of-type img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.row1 div:last-of-type img:hover {
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+.text-with-line span {
+  position: relative;
+  left: -12px;
+  top: -1px;
+}
+
+.text-with-line img {
+  width: 30px;
+}
+
+.dropdown {
+  color: black;
+  width: 200px;
+  display: none;
+  transition: display 0.5s ease-in-out;
+  margin-top: 5px;
+  line-height: 0px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  
+}
+
+.dropdown a:hover {
+  color: #34b7a7;
+}
+
+.list:hover .dropdown {
+  display: block;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.hero-box{
+margin-top: 5.5rem;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero .col1{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero .col2{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.hero .col2 img{
+  width: 80%;
+}
+
+.hero-text p{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+.describe p{
+  font-size: large;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-button button{
+  color: #ffffff;
+  background: #34b7a7;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: none;
+  transition: background-color 0.5 ease-in-out;
+}
+.hero-button button:hover{
+  background-color: #43c9ba;
+}
+
+.footer-box{
+  height: 159px;
+  position: relative;
+  background-color: #e9e8e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-logo img{
+  margin-top: 10px;
+  width: 40px;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 6px;
+  transition: color 5ms ease-in-out;
+}
+.footer-logo img:hover{
+  background-color: #43c9ba;
+}
+.footer-end{
+  margin-top: 15px;
+}
+.footer-end span{
+  color: #34b7a7;
+}
+
+#preloader {
+  background-color: #000000 url("./assets/img/navlogo/Iphone-spinner-2.gif") no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+
+
+@media only screen and (max-width: 760px) {
+  #nav-list, .row1 div:last-of-type{
+    opacity: 0;
+  }
+  .row1 div:first-of-type{
+  padding: 18px 10px;
+  }
+
+  .row1 div:first-of-type button{
+    display: block;
+    position: relative;
+    right: -10rem;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    /* border-radius: 10px;
+   box-shadow: 0 0 10px ; */
+    cursor: pointer;
+    /* background-color: #43c9ba; */
+  }
+  .row1 div:first-of-type img{
+    width: 40px;
+  }
+
+
+
+}
+

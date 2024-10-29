@@ -1,0 +1,73 @@
+#address img{
+    width: 2.5rem;
+   background:  #34b7a73d;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    padding: 5px;
+    transition: background 500ms ease-in;
+}
+#address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 8px gray;
+}
+
+
+#location:hover img, #call:hover img, #mail:hover img{
+    background:  #34b7a89c;
+    background-blend-mode:screen ;
+}
+#location, #call, #mail{
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    background: #fff;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 8px gray;
+}
+.form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border-color: #d1d1d1;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+}
+.form-control:focus {
+    border-color: #34b7a7;
+    box-shadow: 0 0 5px rgba(52, 183, 167, 0.5);
+}
+.btn-primary {
+    background-color: #34b7a7;
+    border-color: #34b7a7;
+    border-radius: 20px;
+    padding: 5px 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #2fa395;
+    border-color: #2fa395;
+    transform: scale(1.05);
+}
+
+
+@media only screen and  (max-width: 760px){
+#address{
+    width: 100%;
+}
+#form{
+    width: 100%;
+}
+#contact-form-div{
+   gap: 3rem;
+}
+#conatact-form{
+   padding-bottom: 30rem;
+}
+}

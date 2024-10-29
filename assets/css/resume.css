@@ -1,0 +1,65 @@
+.resume{
+    width: 100%;
+    height: 20rem;
+    /* background: azure; */
+    padding-top: 9rem;
+}
+.resume-row1 div:first-of-type h1{
+    font-size: xx-large;
+    font-family: "poppins";
+    font-weight: 600;
+    border-bottom: 3px solid  #34b7a7;
+    padding-bottom: 17px;
+}
+.resume-row2{
+    padding-top: 17px;
+}
+#resume-main-box{
+    height: 5rem;
+    margin: 0;
+    width: 92%;
+}
+#resume-main-box h2{
+    font-size: 25px;
+    font-family: "poppins";
+    font-weight: 600;
+}
+.resume-main-text-box div:nth-of-type(1){
+    width: 90%;
+}
+.header{
+    font-size: 20px;
+    font-family: "poppins";
+    text-transform: uppercase;
+    color: gray;
+}
+.header span img{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #34b7a7;
+    border-radius: 50%;
+    margin-left: -1.4rem;
+    background-color: white;
+    margin-top: -0.45rem;
+}
+.resume-main-text div{
+    border-left: 2px solid  #34b7a7;
+}
+.resume-main-text li{
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.inner-header{
+    border: none;
+    background-color: white;
+    height: 5rem;
+    margin-left: -25px;
+    display: flex;
+    align-items: center;
+}
+.inner-header h2{
+    font-size: 25px;
+    font-family: "poppins";
+    font-weight: 600;
+}
