@@ -6,12 +6,12 @@
 }
 @font-face {
   font-family: 'Basking';
-  src: url('./assets/fonts/Basking.ttf') format('truetype');
+  src: url('../fonts/Basking.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'GREY';
-  src: url('./assets/fonts/GREY.ttf') format('truetype');
+  src: url("../fonts/GREY.ttf") format('truetype');
 }
 
 
@@ -160,6 +160,7 @@ li.active a{
 }
 
 .hero-box{
+  background: url("../img/hero-image/BG.jpg") no-repeat center center/cover;
 margin-top: 5.5rem;
   height: 85vh;
   display: flex;
@@ -167,6 +168,7 @@ margin-top: 5.5rem;
   align-items: center;
 }
 .hero .col1{
+  color: white;
   width: 50%;
   height: 100%;
   display: flex;
@@ -180,10 +182,12 @@ margin-top: 5.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  overflow: hidden;
 }
-.hero .col2 img{
-  width: 80%;
+.hero .col2 p{
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  word-wrap: normal;
 }
 
 .hero-text p{
