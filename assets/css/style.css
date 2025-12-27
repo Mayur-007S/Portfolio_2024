@@ -4,6 +4,7 @@
   box-sizing: border-box;
 
 }
+
 @font-face {
   font-family: 'Basking';
   src: url('../fonts/Basking.ttf') format('truetype');
@@ -20,6 +21,8 @@
   top: 0px;
   background-color: #ebeae8;
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 1;
 }
 
 .row1 {
@@ -35,7 +38,7 @@
   cursor: pointer;
 }
 
-li.active a{
+li.active a {
   color: #34b7a7;
 }
 
@@ -44,7 +47,8 @@ li.active a{
   transition: color 0.5s ease-in-out;
   cursor: pointer;
 }
-.text-with-line a{
+
+.text-with-line a {
   color: rgb(0 0 0 / 69%);
   text-decoration: none;
 }
@@ -99,7 +103,8 @@ li.active a{
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
 }
-.row1 div:first-of-type button{
+
+.row1 div:first-of-type button {
   display: none;
 }
 
@@ -143,7 +148,7 @@ li.active a{
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 500;
-  
+
 }
 
 .dropdown a:hover {
@@ -159,15 +164,16 @@ li.active a{
 
 }
 
-.hero-box{
+.hero-box {
   background: url("../img/hero-image/BG.jpg") no-repeat center center/cover;
-margin-top: 5.5rem;
+  margin-top: 5.5rem;
   height: 85vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.hero .col1{
+
+.hero .col1 {
   color: white;
   width: 50%;
   height: 100%;
@@ -176,7 +182,8 @@ margin-top: 5.5rem;
   align-items: center;
   text-align: center;
 }
-.hero .col2{
+
+.hero .col2 {
   width: 50%;
   height: 100%;
   display: flex;
@@ -184,23 +191,25 @@ margin-top: 5.5rem;
   align-items: center;
   overflow: hidden;
 }
-.hero .col2 p{
+
+.hero .col2 p {
   color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
   word-wrap: normal;
 }
 
-.hero-text p{
+.hero-text p {
   font-size: 50px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
 }
-.describe p{
+
+.describe p {
   font-size: large;
   font-family: "Poppins", sans-serif;
 }
 
-.hero-button button{
+.hero-button button {
   color: #ffffff;
   background: #34b7a7;
   font-family: "Poppins", sans-serif;
@@ -215,11 +224,12 @@ margin-top: 5.5rem;
   border: none;
   transition: background-color 0.5 ease-in-out;
 }
-.hero-button button:hover{
+
+.hero-button button:hover {
   background-color: #43c9ba;
 }
 
-.footer-box{
+.footer-box {
   height: 159px;
   position: relative;
   background-color: #e9e8e6;
@@ -228,7 +238,8 @@ margin-top: 5.5rem;
   align-items: center;
   text-align: center;
 }
-.footer-logo img{
+
+.footer-logo img {
   margin-top: 10px;
   width: 40px;
   border: 1px solid;
@@ -236,13 +247,16 @@ margin-top: 5.5rem;
   padding: 6px;
   transition: color 5ms ease-in-out;
 }
-.footer-logo img:hover{
+
+.footer-logo img:hover {
   background-color: #43c9ba;
 }
-.footer-end{
+
+.footer-end {
   margin-top: 15px;
 }
-.footer-end span{
+
+.footer-end span {
   color: #34b7a7;
 }
 
@@ -258,14 +272,17 @@ margin-top: 5.5rem;
 
 
 @media only screen and (max-width: 760px) {
-  #nav-list, .row1 div:last-of-type{
+
+  #nav-list,
+  .row1 div:last-of-type {
     opacity: 0;
   }
-  .row1 div:first-of-type{
-  padding: 18px 10px;
+
+  .row1 div:first-of-type {
+    padding: 18px 10px;
   }
 
-  .row1 div:first-of-type button{
+  .row1 div:first-of-type button {
     display: block;
     position: relative;
     right: -10rem;
@@ -277,11 +294,11 @@ margin-top: 5.5rem;
     cursor: pointer;
     /* background-color: #43c9ba; */
   }
-  .row1 div:first-of-type img{
+
+  .row1 div:first-of-type img {
     width: 40px;
   }
 
 
 
 }
-
